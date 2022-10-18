@@ -10,7 +10,7 @@ int main()
         scanf("%d",&a);
         if(a>4)
         {
-        printf("\n\n!Follow the rule! \n\n YOU LOST");
+        printf("\n\n!Follow the rules! \n\n GAME ENDED");
         exit(0);
         }
         printf("I will pick %d Matchstick\n",(5-a));
@@ -18,6 +18,6 @@ int main()
         rem-=(a+b);
         printf("Remaining:%d\n\n\n",rem);
         if(rem==1)
-        printf("YOU LOST!");
+        printf("YOU LOST!\n\n                 BETTER LUCK NEXT TIME:)");
     }
 }
