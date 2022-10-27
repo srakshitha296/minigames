@@ -1,23 +1,33 @@
 #include<stdio.h>
 #include<stdlib.h>
-int main()
-{
-    int total,a,b,i,rem=21;
-    printf("                                             RULE: One can pick only upto 4 Matchstick at a time.\n\n");
-    for(i=0;i<=rem;i++)
-    {
-        printf("YOUR TURN :");
-        scanf("%d",&a);
-        if(a>4)
-        {
-        printf("\n\n!Follow the rules! \n\n GAME ENDED");
-        exit(0);
-        }
-        printf("I will pick %d Matchstick\n",(5-a));
-        b=5-a;
-        rem-=(a+b);
-        printf("Remaining:%d\n\n\n",rem);
-        if(rem==1)
-        printf("YOU LOST!\n\n                 BETTER LUCK NEXT TIME:)");
+int main() {
+int m = 21, p, c;
+while (1) {
+    printf("\n\t\tRules: you pick 1 or 2 or 3 or 4 matchsticks at a time!!!\n\n\n\n");
+    printf("\nNumber of Match sticks left = %d\n", m);
+    printf("Pick 1 or 2 or 3 or 4 matches\n");
+    scanf("%d", &p);
+
+    if (p > 4 || p < 1){
+        printf("follow the rukes\n");
+        continue;
     }
+    m = m - p;
+
+    printf("Number of matches left = %d\n", m);
+
+    c = 5 - p;
+
+    printf("out of which computer picked up %d\n", c);
+
+    m = m - c;
+
+    if (m == 1) {
+      printf("\nNumber of matches left = %d\n", m);
+      printf("You lost the Game\n");
+      break;
+    }
+  }
+
+  return 0;
 }
