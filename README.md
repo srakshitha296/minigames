@@ -12,6 +12,6 @@
      The one who has to pick the last 1 matchstick will lose the game.
      But more than 4 matchsticks cant be chosen at a time. Doing so will end the game!
 </p>
-< img src= "">
+< img src= "Output.png" alt height = "200" width = "200" >
 </body>
 </html>
