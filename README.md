@@ -9,6 +9,6 @@
                          The one who has to pick the last 1 matchstick will lose the game.
                          But more than 4 matchsticks cant be chosen at a time. Doing so will end the game!
                     </p>
-                     <img src= "Output.png" alt height = "400" width = "600">
+                     <img src= "MatchStick\Output.png" alt height = "400" width = "600">
           </body>
 </html>
