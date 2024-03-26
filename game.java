@@ -1,4 +1,7 @@
-package Game;
+//Number guessing game
+
+
+package game;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -8,10 +11,11 @@ public class game {
 	public static void main(String[] args) {
 		Random r= new Random();
 		
-		int num = r.nextInt(100);
+		int num = r.nextInt(50);
 		
 Scanner userInput = new Scanner(System.in);
 
+System.out.println("                                                           Guess a Number within 50");
 System.out.println("Enter a number : ");
 int number = userInput.nextInt();
 
